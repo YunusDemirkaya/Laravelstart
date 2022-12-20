@@ -16,12 +16,12 @@ use Illuminate\Http\Request;
 
 
 
-class Yazilim extends Controller
-{
-    function degisken($text)
-    {
-        return view('yazilim',['tx'=>$text]) ;
-    }
-}
+// class Yazilim extends Controller
+// {
+//     function degisken($text)
+//     {
+//         return view('yazilim',['tx'=>$text]) ;
+//     }
+// }
 
 ///
