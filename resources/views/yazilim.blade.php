@@ -1,0 +1,1 @@
+İlk Blade oluşumu. {{$tx}}, 
