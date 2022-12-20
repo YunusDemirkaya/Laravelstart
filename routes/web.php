@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Formislemleri;
 use Illuminate\Support\Facades\Route;
 // use App\Http\Controllers\Ornek;
 // use App\Http\Controllers\Yazilim;
@@ -21,3 +22,8 @@ use App\Http\Controllers\Yonet;
 ////////////////////==========DERS-2==========////////////////////
 
 Route::get("/web",[Yonet::class,'site'])->name('web');
+
+
+Route::get("/form",[Formislemleri::class,'gorunum']);
+
+Route::middleware('arakontrol')->post("/form-sonuc",[Formislemleri::class,'sonuc'])->name('sonuc');
